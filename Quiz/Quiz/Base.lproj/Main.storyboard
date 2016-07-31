@@ -36,6 +36,12 @@
                                     <action selector="showNextQuestion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wWm-OE-U6Y"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="87h-ym-Jy6">
+                                <rect key="frame" x="288" y="28" width="25" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WDB-29-Dg8">
                                 <rect key="frame" x="254" y="326" width="93" height="30"/>
                                 <state key="normal" title="Show Answer"/>
@@ -46,22 +52,25 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="OIR-6U-v27" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1mQ-Ew-XQw"/>
                             <constraint firstItem="nko-ss-Srx" firstAttribute="centerX" secondItem="OIR-6U-v27" secondAttribute="centerX" id="8Lj-G0-3uA"/>
                             <constraint firstItem="Z35-kE-u6e" firstAttribute="centerX" secondItem="OIR-6U-v27" secondAttribute="centerX" id="8SA-SZ-Q72"/>
                             <constraint firstItem="nko-ss-Srx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="FKU-Yp-7xH"/>
                             <constraint firstItem="WDB-29-Dg8" firstAttribute="top" secondItem="Z35-kE-u6e" secondAttribute="bottom" constant="16" id="FpF-bV-1w1"/>
-                            <constraint firstItem="WDB-29-Dg8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="G44-O2-OO5"/>
+                            <constraint firstItem="WDB-29-Dg8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HSo-TR-SHY"/>
+                            <constraint firstItem="87h-ym-Jy6" firstAttribute="top" secondItem="nko-ss-Srx" secondAttribute="top" id="I1D-db-ZFE"/>
+                            <constraint firstItem="OIR-6U-v27" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="45" id="NLH-ou-ICO"/>
+                            <constraint firstItem="OIR-6U-v27" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ShQ-Og-h6N"/>
                             <constraint firstItem="Z35-kE-u6e" firstAttribute="top" secondItem="OIR-6U-v27" secondAttribute="bottom" constant="194" id="ZuQ-pj-KFl"/>
-                            <constraint firstItem="nko-ss-Srx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eGk-PC-g30"/>
-                            <constraint firstItem="WDB-29-Dg8" firstAttribute="centerX" secondItem="OIR-6U-v27" secondAttribute="centerX" id="njO-4S-gO2"/>
+                            <constraint firstItem="87h-ym-Jy6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fVF-I8-mvE"/>
                             <constraint firstItem="Z35-kE-u6e" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="o8i-sA-8HR"/>
-                            <constraint firstItem="OIR-6U-v27" firstAttribute="top" secondItem="nko-ss-Srx" secondAttribute="bottom" constant="16" id="o8k-MX-zkd"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="answerLabel" destination="Z35-kE-u6e" id="7OT-lN-O2e"/>
-                        <outlet property="questionLabel" destination="nko-ss-Srx" id="gZX-F9-KOu"/>
+                        <outlet property="currentQuestionLabel" destination="nko-ss-Srx" id="Fcv-VX-wmj"/>
+                        <outlet property="currentQuestionLabelCenterXConstraint" destination="8Lj-G0-3uA" id="yJn-Ra-j64"/>
+                        <outlet property="nextQuestionLabel" destination="87h-ym-Jy6" id="74q-H2-bwv"/>
+                        <outlet property="nextQuestionLabelCenterXConstraint" destination="fVF-I8-mvE" id="7cU-0V-Krd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
