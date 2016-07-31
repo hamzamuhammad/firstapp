@@ -42,7 +42,7 @@ class ViewController: UIViewController {
         let answer: String = answers[currentQuestionIndex]
         answerLabel.text = answer
     }
-    //test comment
+
     override func viewDidLoad() {
         super.viewDidLoad()
         currentQuestionLabel.text = questions[currentQuestionIndex]
